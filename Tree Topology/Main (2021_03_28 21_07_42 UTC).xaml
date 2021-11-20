@@ -1,0 +1,810 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1123,10128" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="460,10063" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open 'explorer.exe  bin'" FileName="F:\Cisco Packet Tracer 7.3.1\bin\PacketTracer7.exe" sap:VirtualizedContainerService.HintSize="418,87" sap2010:WorkflowViewState.IdRef="StartProcess_2" />
+    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click 'editable text'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition OffsetX="48" OffsetY="19" Position="TopLeft" />
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8e11fe4-981f-4527-a19f-833b39f065fc" InformativeScreenshot="b60d73e36f50127045396f96f584e338" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Log In to Cisco' role='push button' /&gt;&lt;ctrl name='Email ' role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'editable text'" EmptyField="False" sap:VirtualizedContainerService.HintSize="418,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="False" SimulateType="False" Text="Gowtham_K@hotmail.co.uk">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b91b250d-e994-4283-95c6-d21ca8843914" InformativeScreenshot="eb05af8b8599d0e45eebb33fbb3b2c27" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Log In to Cisco' role='push button' /&gt;&lt;ctrl name='Email ' role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Next'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition OffsetX="147" OffsetY="15" Position="TopLeft" />
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92b6d53b-39f8-4c5b-b5c5-839cd1d08222" InformativeScreenshot="86f9f7aa6bcfda0eb9c27c5d79066f53" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Log In to Cisco' role='push button' /&gt;&lt;ctrl name='Next' role='push button' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="5000" DisplayName="Click 'editable text'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition OffsetX="38" OffsetY="16" Position="TopLeft" />
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="83e87be5-ff92-4a97-92e7-76b33487a357" InformativeScreenshot="aabfcc8f5141a9a8a793c327e0b8b711" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Log In to Cisco' role='push button' /&gt;&lt;ctrl name='Password ' role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'editable text'" EmptyField="False" sap:VirtualizedContainerService.HintSize="418,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="False" SimulateType="False" Text="Pvaglue10">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c1050998-7774-4c99-ab66-5cd525c4ce61" InformativeScreenshot="aabfcc8f5141a9a8a793c327e0b8b711" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Log In to Cisco' role='push button' /&gt;&lt;ctrl name='Password ' role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Sign in'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition OffsetX="141" OffsetY="20" Position="TopLeft" />
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5cc6e8c9-f838-40a3-ad67-b50da5e42d20" InformativeScreenshot="69d9516dad14e493df01fc774df7baa9" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Log In to Cisco' role='push button' /&gt;&lt;ctrl name='Log in' role='push button' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="418,8912" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="5000" DisplayName="Click 'check box  Switches'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="17" OffsetY="21" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bb399568-fea9-4a42-84e3-a4b7d9f0c04a" InformativeScreenshot="02f56117f2e70a40be6fedcb63e16b5b" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&#xA;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&#xA;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device categories' role='grouping' /&gt;&#xA;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Switches' role='check box' /&gt;&#xA;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'check box  Switches'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="18" OffsetY="18" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="af762a95-3a0d-47f4-851a-69fad1a4dd6d" InformativeScreenshot="434c0c08f5a3b3971989fe612cecff6a" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device categories' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Switches' role='check box' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'check box  2960-24TT'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="14" OffsetY="13" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="566bca67-8db9-473b-a2af-f597a4c8cc9e" InformativeScreenshot="b5ca568031b7cedf3715d4e8ad730e78" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='2960-24TT' role='check box' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="1063" OffsetY="342" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b6f0340d-b222-490d-a38d-ba0ce81181d4" InformativeScreenshot="b46ff6af52b33fb54d3903b7726b60bb" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&#xA;&lt;ctrl role='grouping' aastate='focusable' idx='1' /&gt;&#xA;&lt;ctrl role='grouping' idx='1' /&gt;&#xA;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="1054" OffsetY="344" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="474a33d9-bc76-46b2-b77c-db701e3e20fa" InformativeScreenshot="bb91bcdcf32407ed8631821591ca214e" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&#xA;&lt;ctrl role='grouping' aastate='focusable' idx='1' /&gt;&#xA;&lt;ctrl role='grouping' idx='1' /&gt;&#xA;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="376,7770" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="5000" DisplayName="Click 'page tab  CLI'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition OffsetX="22" OffsetY="12" Position="TopLeft" />
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ef1c10a8-f3fa-45fe-acc0-694d566b6d64" InformativeScreenshot="ad7ffe92a3b3e63dcdc407f6ab415a3e" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_tabbar' /&gt;&lt;ctrl name='CLI' role='page tab' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Click.Target>
+        </ui:Click>
+        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="5000" DisplayName="Click 'grouping '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition OffsetX="41" OffsetY="373" Position="TopLeft" />
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="56489072-65a1-4486-a593-3f364224059a" InformativeScreenshot="ef01b4cf71eec93f88e11fa957fcdcf0" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&#xA;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&#xA;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' role='grouping' idx='1' /&gt;&#xA;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Click.Target>
+        </ui:Click>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18b1e6e5-ec31-48d0-96c6-5e150f3f6c68" InformativeScreenshot="a75dbc6431b2c4e62ef226b489e32669" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition OffsetX="61" OffsetY="380" Position="TopLeft" />
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="45fdcd3d-b5fe-4fff-875e-5c64a0c01c5a" InformativeScreenshot="0888134e82189ce1e00a6683ee33a380" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Click.Target>
+        </ui:Click>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="False" SimulateType="False" Text="enable">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5012f6a7-92b3-4d06-a7e1-38df18984215" InformativeScreenshot="403122f6db1d5065f6965267cb239eb5" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ecc456c4-7df1-4d4d-83f7-ffd04a723842" InformativeScreenshot="0c90a828aa5d083a0bf907b0a9832301" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_8" SendWindowMessages="False" SimulateType="False" Text="configure terminal">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="355db95b-d6bf-44ad-964f-67d029f1515c" InformativeScreenshot="4e7298def92c60d3b149da89546b2185" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_9" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cea13789-7d7e-4d7c-ade6-1ed9a400ece4" InformativeScreenshot="5b2cdab2762ccecec10d9f7999af5c91" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" SendWindowMessages="False" SimulateType="False" Text="hostname S1">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="365cdc4b-e5f6-42fe-8698-5a9abb7cc736" InformativeScreenshot="23f4149799fbe8ff7bd3c18b5dcbc1c8" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_11" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="961edaac-7e2f-4586-a52a-4df70c0932db" InformativeScreenshot="ea40d33671a6853c99064106dca3b831" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_12" SendWindowMessages="False" SimulateType="False" Text="enable password cisco">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c60c0cd6-0a9c-4d4c-bc2f-605be3a21732" InformativeScreenshot="d09836350fecab0e28a63a8a8bc13725" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_13" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="032e2ae7-80fb-413c-8ae4-49358ea8cdcc" InformativeScreenshot="2bed32d09a1c62c9f2845cff04f7b9ef" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_14" SendWindowMessages="False" SimulateType="False" Text="service password-encryption">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74434600-718c-482d-bb84-c13ea2401a5d" InformativeScreenshot="45dd7421ee785b996b254a0937578851" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_15" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3b485ac0-4126-426d-ab83-d52906bc66b3" InformativeScreenshot="edd56098c4da33216b6007ac2c495064" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_16" SendWindowMessages="False" SimulateType="False" Text="enable secret class">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="57b34a0c-a652-4016-8e0c-256a829a02bd" InformativeScreenshot="ef01b4cf71eec93f88e11fa957fcdcf0" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_17" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8d4c2611-99f4-4ca1-aab8-760cb3eaf365" InformativeScreenshot="91ffc118c7607da8ad97ff31172a5d1a" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_18" SendWindowMessages="False" SimulateType="False" Text="banner motd &quot;Warning Authorized personnel only&quot;">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5b8cd6ed-e660-40af-898a-85692ea3314a" InformativeScreenshot="3a92872171026e268ecff69310d834e0" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&#xA;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&#xA;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' role='grouping' idx='1' /&gt;&#xA;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_19" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0287fcfe-4fea-43e6-813e-19aef3363c35" InformativeScreenshot="6e00e02649bacaf3be4f0d00c3ca7999" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_20" SendWindowMessages="False" SimulateType="False" Text="line console 0">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d14f2e41-0b35-411f-91c8-d5ed5cc3fa22" InformativeScreenshot="7bcd3ac78904069fa742826c40f0b5c1" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_21" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="98db16cb-ce01-4ce3-a449-cca6470758ea" InformativeScreenshot="b3ca3c68627155afd9ea33d01fa5e333" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_22" SendWindowMessages="False" SimulateType="False" Text="password Switch1">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c39d0721-628e-4619-b6b1-e8e07bc47424" InformativeScreenshot="3c9b3bac3eef62d4d32ea4cf2a0dec22" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_23" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5d5a73f9-6eca-48fb-ba39-046fe2b84f42" InformativeScreenshot="20cdc0010fac0842bff8940549b71e2d" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_24" SendWindowMessages="False" SimulateType="False" Text="login">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4da9796c-ec33-485c-a6f3-de772720d328" InformativeScreenshot="1d2aff1d03b6e9902341d66d090b489f" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_25" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7cc9c81e-a442-4c82-a6ea-c34e8f9852a8" InformativeScreenshot="0d0abbe309186e113883acab891daf71" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_26" SendWindowMessages="False" SimulateType="False" Text="exit">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2b18b120-83f2-4664-b4a5-76105133b730" InformativeScreenshot="a890269230cdf2bbfb58ef77135c40e9" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_27" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ab0bcf52-bfab-47a6-b296-9a04c9903b02" InformativeScreenshot="908ca7022124f416ecabdd2e937db48b" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_28" SendWindowMessages="False" SimulateType="False" Text="line vty 0 4">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b4c75735-94dc-4717-a9f1-31bf43ecd164" InformativeScreenshot="dec84daf6278058f823cefcde83bdc5b" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_29" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="01273a2c-e475-4b83-a000-b4946c1f3445" InformativeScreenshot="d97f2a44436e387f73b69705ae0ab1d5" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_30" SendWindowMessages="False" SimulateType="False" Text="password cisco1">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3835edd1-beb7-43be-8605-071640873c3b" InformativeScreenshot="5dec0dcc827eadc85daf33fcbba69f45" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_31" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="51525f72-c503-40e2-b557-d51807db61c6" InformativeScreenshot="6bf04e8380b0cb4216d8c1105b300522" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_32" SendWindowMessages="False" SimulateType="False" Text="login">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e1a44de6-2c7d-42db-a99e-0e653a968600" InformativeScreenshot="103b10ce40866abdbf45e0f8f4eccbb1" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_33" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="842b0ec4-a5ca-4c28-b248-8781ec52a173" InformativeScreenshot="13ad218f629bf163f17ca3e9813e2158" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_34" SendWindowMessages="False" SimulateType="False" Text="exit">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cd3363cb-4a4d-4bff-a99d-8afd3ce1b6f4" InformativeScreenshot="2c84cb2dd91d6cf6cbd81f31dd37ad78" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_35" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5673fe13-0c88-4736-b3ad-fc82a06bf546" InformativeScreenshot="842395891eed602103e03d6c67e36842" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_36" SendWindowMessages="False" SimulateType="False" Text="interface vlan 1">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cd660335-b8ca-4da4-a022-d92bdcfd66e6" InformativeScreenshot="f26ef6a4597a2330d688e52eb6a70bee" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_37" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="36885173-ee19-4b38-9207-cff782399395" InformativeScreenshot="8569ed9a4d9cb262c8948e3db0ad6be7" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_42" SendWindowMessages="False" SimulateType="False" Text="ip address 192.168.1.1 255.255.255.0">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00b5db63-83df-4a82-b8f9-100a20d75095" InformativeScreenshot="c50e10ceca364767d4d7e2368412fcaa" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_43" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73b6e6f2-5bad-4681-927b-0870694cf287" InformativeScreenshot="7b630220f3dd7dffd8da966cc194e340" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_44" SendWindowMessages="False" SimulateType="False" Text="no shutdown">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9b1ecf2f-e23f-4071-aaf1-e08ecce8680d" InformativeScreenshot="f34fc2ca41066c1cbfc07a0d48e0780a" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_45" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a3f4f87e-be72-4312-834b-dfbff94ef2e4" InformativeScreenshot="068e02f6dc5711ad7441a4c96cfcd3b8" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_46" SendWindowMessages="False" SimulateType="False" Text="exit">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="89b9cf34-1cdd-472a-88f3-0d96a7e2f507" InformativeScreenshot="8bbef2edfff5f59abc140264abf61f1a" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_47" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c0263a81-0669-4caa-a5a2-030fc32ef458" InformativeScreenshot="975b228e7b3035a9fadb8e015f722161" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_20" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition OffsetX="124" OffsetY="375" Position="TopLeft" />
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6fa6d625-bd31-4804-9042-ba37281bf843" InformativeScreenshot="7676ddeb633201af29cc1f49117f7933" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Click.Target>
+        </ui:Click>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_48" SendWindowMessages="False" SimulateType="False" Text="exit">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2a1c2f8d-cd65-4485-bf90-0a3160aec1b7" InformativeScreenshot="d9a051ce12a2b974fb4f2ee0213d6e58" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_49" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f1b716e0-817c-41d2-8ab7-02ac83b22b3b" InformativeScreenshot="0a72c14f15a0a57642a1779eefbcfe8d" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+      </Sequence>
+      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'page tab  CLI'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_21" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="13" OffsetY="13" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0f63b0fa-8841-4e65-9fec-92408cc9a426" InformativeScreenshot="ecdec746e7b6120b097120a954c0531f" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'grouping '" EmptyField="False" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_50" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="03f6d471-4148-4116-bebe-51e8cf64c71d" InformativeScreenshot="ef01b4cf71eec93f88e11fa957fcdcf0" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Switch0' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' name='Ctrl+F6 to exit CLI focus' role='editable text' /&gt;&lt;ctrl automationid='CBaseDeviceWidgetClass.c_physicalTab.qt_tabwidget_stackedwidget.*' idx='1' role='grouping' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,421 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1099,4318" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="544,4253" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="502,4161" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open 'explorer.exe  bin'" FileName="F:\Cisco Packet Tracer 7.3.1\bin\PacketTracer7.exe" sap:VirtualizedContainerService.HintSize="460,87" sap2010:WorkflowViewState.IdRef="StartProcess_2" />
+      <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="460,3942" sap2010:WorkflowViewState.IdRef="Sequence_15">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click 'editable text'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition OffsetX="48" OffsetY="19" Position="TopLeft" />
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8e11fe4-981f-4527-a19f-833b39f065fc" InformativeScreenshot="b60d73e36f50127045396f96f584e338" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Sign in to Cisco' role='push button' /&gt;&lt;ctrl role='editable text' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Click.Target>
+        </ui:Click>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'editable text'" EmptyField="False" sap:VirtualizedContainerService.HintSize="418,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="False" SimulateType="False" Text="Gowtham_K@hotmail.co.uk">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b91b250d-e994-4283-95c6-d21ca8843914" InformativeScreenshot="eb05af8b8599d0e45eebb33fbb3b2c27" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Sign in to Cisco' role='push button' /&gt;&lt;ctrl role='editable text' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Next'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition OffsetX="147" OffsetY="15" Position="TopLeft" />
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92b6d53b-39f8-4c5b-b5c5-839cd1d08222" InformativeScreenshot="86f9f7aa6bcfda0eb9c27c5d79066f53" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Sign in to Cisco' role='push button' /&gt;&lt;ctrl name='Next' role='push button' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Click.Target>
+        </ui:Click>
+        <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="418,3384" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="5000" DisplayName="Click 'editable text'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition OffsetX="38" OffsetY="16" Position="TopLeft" />
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="83e87be5-ff92-4a97-92e7-76b33487a357" InformativeScreenshot="aabfcc8f5141a9a8a793c327e0b8b711" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Sign in to Cisco' role='push button' /&gt;&lt;ctrl role='editable text' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'editable text'" EmptyField="False" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" SendWindowMessages="False" SimulateType="False" Text="Pvaglue10">
+            <ui:TypeInto.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c1050998-7774-4c99-ab66-5cd525c4ce61" InformativeScreenshot="aabfcc8f5141a9a8a793c327e0b8b711" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Sign in to Cisco' role='push button' /&gt;&lt;ctrl role='editable text' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:TypeInto.Target>
+          </ui:TypeInto>
+          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Sign in'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition OffsetX="141" OffsetY="20" Position="TopLeft" />
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5cc6e8c9-f838-40a3-ad67-b50da5e42d20" InformativeScreenshot="69d9516dad14e493df01fc774df7baa9" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='netacad.com Login' /&gt;&lt;ctrl name='Sign in to Cisco' role='push button' /&gt;&lt;ctrl name='Sign in' role='push button' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="376,2826">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'check box  Switches'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b971d2b-2318-4954-a967-63e3d625879f" InformativeScreenshot="e16d97e7d72578cc32be6b553a6a0045" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device categories' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Switches' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Uncheck" DisplayName="Check 'check box  Switches'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="849517ef-e87e-4b7d-953c-dea8904277f3" InformativeScreenshot="430f5dfba2d40bfd7bf4766b4fc0e12f" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device categories' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Switches' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'check box  Switches'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="61dc8bd8-827b-4bbc-ba14-cdc1b724518d" InformativeScreenshot="e16d97e7d72578cc32be6b553a6a0045" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device categories' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Switches' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Uncheck" DisplayName="Check 'check box  Switches'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="22dc8f4c-2956-4c52-9243-e4231a6bd1ad" InformativeScreenshot="e6fbd027bb35f001ecce2ee4b348f7d9" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device categories' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Switches' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'check box  Switch-PT'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c232d65c-2fec-4b4d-a6a2-a0820795984e" InformativeScreenshot="b9605af5932f5c6f5f0d27d927544103" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='Switch-PT' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Uncheck" DisplayName="Check 'check box  Switch-PT'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5ff8a982-13a8-4309-96ef-1234cf9c23a7" InformativeScreenshot="72a8132467fc76377f74ddabd48bf575" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='Switch-PT' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'check box  Switch-PT'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5b5fe2ba-d58a-4ad2-9c80-94f1bdb5fe12" InformativeScreenshot="0a45b7103565b348ebd81bef24c5f5e9" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='Switch-PT' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="334,106" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition OffsetX="795" OffsetY="185" Position="TopLeft" />
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0e64c07f-3e05-43a9-9b99-4fdf958c91fb" InformativeScreenshot="6e660cc95f9b883e2f5f5deac6ec186a" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Uncheck" DisplayName="Check 'check box  Switch-PT'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c7cd980d-fff6-4861-a453-913a0e1491c9" InformativeScreenshot="5a95f34ec0ae2cac0be77d0f4d14dc10" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='Switch-PT' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="334,106" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition OffsetX="844" OffsetY="220" Position="TopLeft" />
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fa726778-3c67-49fb-b550-ea1cd59d8404" InformativeScreenshot="254ad40becb7433b97226701dbc82875" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="334,106" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition OffsetX="844" OffsetY="220" Position="TopLeft" />
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="66261f18-441f-4aae-a08a-b44922e99fec" InformativeScreenshot="7c56fc0f9e688a1c092588f7869594ec" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'check box  Switch-PT'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7843b31f-496b-4740-8ac6-14d00894d173" InformativeScreenshot="0a45b7103565b348ebd81bef24c5f5e9" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='Switch-PT' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="334,106" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition OffsetX="856" OffsetY="231" Position="TopLeft" />
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1bec8945-9e7c-4195-9dd3-224b68fedfe3" InformativeScreenshot="501f031ec254ebd64726617c9ffdb7b3" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Uncheck" DisplayName="Check 'check box  Switch-PT'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="495bc299-97e8-44ef-bb2d-be6f549c9541" InformativeScreenshot="5a95f34ec0ae2cac0be77d0f4d14dc10" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='Switch-PT' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'check box  Switch-PT'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c4323e7d-494d-46ae-8e25-6bcbe946a976" InformativeScreenshot="0a45b7103565b348ebd81bef24c5f5e9" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='Switch-PT' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="334,106" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition OffsetX="824" OffsetY="415" Position="TopLeft" />
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="94171476-4f1f-4a08-8189-6d1706870de6" InformativeScreenshot="1607cdeaa0b6e45f92d392f8bad9b047" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Uncheck" DisplayName="Check 'check box  Switch-PT'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="646d616e-0bd1-4467-bc8f-c4f8ad8e8422" InformativeScreenshot="5a95f34ec0ae2cac0be77d0f4d14dc10" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='Switch-PT' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'check box  Switch-PT'" sap:VirtualizedContainerService.HintSize="334,106">
+              <ui:Check.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="19234203-d731-4997-95d7-31ebd2489b5a" InformativeScreenshot="0a45b7103565b348ebd81bef24c5f5e9" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='Network Components' role='grouping' /&gt;&lt;ctrl automationid='CAppWindowBase.centralwidget.m_pNetWorkCompBoxFrame.m_bottomSpli*' name='List of device models' role='grouping' /&gt;&lt;ctrl name='Switch-PT' role='check box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Check.Target>
+            </ui:Check>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="334,106" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition OffsetX="959" OffsetY="327" Position="TopLeft" />
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ede3549f-cb44-4de4-a087-41a8cc43601f" InformativeScreenshot="8eb90288a7a1e3c777b2fe67ef19b625" Selector="&lt;wnd app='packettracer7.exe' cls='Qt5QWindowIcon' title='Cisco Packet Tracer' idx='*' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </Sequence>
+      </Sequence>
+    </Sequence>
+  </Sequence>
+</Activity>
